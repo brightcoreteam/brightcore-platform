@@ -1,0 +1,38 @@
+{
+  "name": "bright-core-technologies",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Official website for Bright Core Technologies - a premium 3D web experience.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "verify:links": "node scripts/check-links.mjs",
+    "verify:render": "node scripts/verify-render.mjs",
+    "verify:behaviour": "node scripts/verify-behaviour.mjs",
+    "assets": "python scripts/generate-assets.py"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.6",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@react-three/fiber": "^9.7.0",
+    "astro": "^7.3.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/three": "^0.180.0"
+  }
+}
